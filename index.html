@@ -13,592 +13,74 @@
     <link rel="manifest" href="manifest.json"> 
     <script src="https://accounts.google.com/gsi/client" async defer></script>
 </head>
-<body translate="no" class="white">
 
+<body translate="no" class=" barlow">
 
-
-    <!-- Login content -->
-    <div id="main" class="content grid-center off">
-        
-        <!-- Login Main -->
-        <div id="main-content" class="grid-center relative">
-
-            <!-- The Loader -->
-            <div id="the-loader" class="grid-center relative">
-                <div class="loader"></div>
+    <div id="app" class="">
+        <div id="the-loader" class="white vh-100 vw-100 grid-center">
+            <div class="loader"></div>
+            <div id="loader-img">
+                <img src="./img/loader web.png" alt="">
             </div>
-            
-            <!-- tree image -->
-            <img src="img/tree-bg.png" alt="" id="the-tree" class="">
-            
-            <div class="hidden relative" id="the-content">
+        </div>
 
-                <!-- Login Content -->
-                <img src="./img/login/upper_rectangle.webp" alt="" id="upper-shape">
-                <img src="./img/login/lower_rectangle.webp" alt="" id="lower-shape">
-                <div id="login-content-top" class="p-20">
-                    <img src="./img/logo-dlhp.png" alt="" class="m-auto" id="logo-dlhp">
+        <div id="login" class="">
 
-                    <h4 class="align-center prociono clr-grey m-0 mb-1 mt-2">DLHP Kota Ambon</h4>
-                    <span class="dis-block align-center mb-1 clr-grey prociono">Bidang Tata Lingkungan</span>
-
-                    <div class="hr grey"></div>
-
-                    <h2 class="align-center uppercase m-0 clr-grey">Absensi Buruh</h2>
-                    <h2 class="align-center m-0  clr-grey mb-3">Taman & Berem</h2>
-
-                    <div id="login-google" class="m-auto flex-center">
-                        <div class="fit-content">
-                            <div class="g_id_signin"
-                                data-type="standard"
-                                data-shape="pill"
-                                data-text="continue_with"
-                                data-theme="filled_blue"
-                                data-size="large">
-                            </div>
-                        </div>
-                        <div id="g_id_onload"
-                            data-client_id="795274958306-a5gs7djtrc92vhmntvpttekf75umcbm4.apps.googleusercontent.com"
-                            data-context="signin"
-                            data-ux_mode="popup"
-                            data-callback="loginGoogle"
-                            data-nonce=""
-                            data-auto_prompt="false">
-                        </div>
-                    </div>
-                </div>
-                <div id="login-content-bottom" class="p-40 align-justify clr-grey">
-                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Laboriosam facilis nihil officiis. Quo vitae, rerum quasi voluptate debitis, voluptas enim perferendis nam incidunt corporis, minima harum itaque iure beatae. Nulla.</p>
-                    <span class="dis-block align-center prociono">Developed by Bendhard16</span>
-                    <span class="mt-2 dis-block p-5"></span>
-                    <a href="Natal 10 12 25.ewsx" download>Download</a>
-                </div>
+            <div id="login-shape"></div>
+            <div id="login-content" class="">
+                <br><br><br><br><br><br>
                 
-                <!-- Dashboard -->
-                <div id="dashboard" class="p-20 scroll">
-
-                    <!-- Dash Head -->
-                    <div id="dash-head" class="flex-start prociono">
-                        <div class="dash-left clr-grey w-100">
-                            <p class="m-0">Selamat Pagi</p>
-                            <h2 class="pt-1 m-0">Bend Hard 16</h2>
-                        </div>
-                        <div class="dash-right flex-center flex-column clr-grey">
-                            <i class="fas fa-user fz-50 dis-block mb-1"></i>
-                            <div class="flex-center fz-10 gap-5">
-                                <i class="fas fa-sync "></i>
-                                <span class="dis-block">update</span>
-                            </div>
-                        </div>
-                    </div>
-                    <br>
-
-                    <!-- Dash Notif -->
-                    <div id="dash-notif" class="">
-                        <span class="dis-block mb-1 clr-white"><i class="fas fa-bell"></i> | Pemberitahuan</span>
-                        <div id="order-group" class="dis-none">
-                            <div class="order-group">
-                                <span class="blue"><i class="fas fa-triangle-exclamation p-5"></i> | Perintah Kerja</span>
-                                <p class="fz-14 align-justify clr-grey p-0 m-0">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ipsam facilis et sequi, temporibus placeat accusamus reprehenderit adipisci odit, neque perferendis eius dicta rerum doloribus ut molestiae quaerat exercitationem quas laboriosam.</p>
-                            </div>
-                        </div>
-                        
-                        <div id="notif-content" class="">
-                            <div class="notif-group">
-                                <i class="fas fa-user red red"></i>|
-                                <p class="clr-grey"> 4 Buruh belum diabsen</p>
-                            </div>
-                            <div class="notif-group ">
-                                <i class="fas fa-envelope red"></i>|
-                                <p class="clr-grey"> Segera masukan surat sakit untuk Lorem Ipsum. Jika tidak maka dianggap Alpa</p>
-                            </div>
-                            <div class="notif-group ">
-                                <i class="fas fa-triangle-exclamation red"></i>|
-                                <p class="clr-grey"> Perintah Kerja</p>
-                            </div>
-                        </div>
-                        
-                    <div class="hr white w-50"></div>
-                    </div>
-
-                    <!-- Dash Main -->
-                    <h3 class="clr-grey align-center uppercase p-10 daftar-buruh prociono dis-none">Daftar Buruh</h3>
-                    <div id="dash-main">
-
-                        <div id="dash-filter" class="flex-beetwen clr-grey mb-2">
-                            <div class="prociono">
-                                <span class="borad-5">Taman</span>
-                                <span class="borad-5">Berem</span>
-                            </div>
-                            <div class="flex-end gap-5">
-                                <span class="red">3</span>
-                                <span class="green">2</span>
-                                <span class="blue">1</span>
-                                <span class="grey">4</span>
-                            </div>
-                        </div>
-
-                        <div id="buruh-search" class="mb-2 flex-beetwen gap-10 white borad-5">
-                            <input type="text" class="w-100 transparent clr-grey br-none  outline-none prociono" placeholder="Cari buruh...">
-                            <i class="fas fa-search"></i>
-                        </div>
-
-                        <div id="dash-buruh">
-
-                            <div class="buruh-group gap-10">
-                                <div class="buruh-left grid-center">
-                                    <img src="./img/icon-512x512.png" alt="" class="">
-                                    <i class="far fa-user fz-60 clr-grey dis-none"></i>
-                                </div>
-                                <div class="buruh-right relative w-100">
-                                    <span class="buruh-name dis-block clr-grey">Lorem Ipsum Dolor Sit Amet</span>
-                                    <div class="buruh-hover-1">
-                                        <div class="flex-start buruh-date">
-                                            <span class="green">18</span>
-                                            <span class="red">19</span>
-                                            <span class="green">20</span>
-                                            <span class="green">21</span>
-                                            <span class="green">22</span>
-                                            <span class="grey">23</span>
-                                        </div>
-                                        <p class="p-0 m-0 fz-12 buruh-rekap flex-start gap-10 clr-grey">
-                                            <span>H 3</span>
-                                            <span>A 1</span>
-                                            <span>I 2</span>
-                                            <span>S 1</span>
-                                        </p>
-                                    </div>
-                                    <div class="buruh-hover-2 gap-5">
-                                        <button class="blue barlow">Detail</button>
-                                        <button class="orange barlow">Sakit</button>
-                                        <button class="grey barlow">Izin</button>
-                                        <button class="green barlow">Hadir</button>
-                                    </div>
-                                    
-                                </div>
-                            </div>
-                            <div class="buruh-group gap-10">
-                                <div class="buruh-left grid-center">
-                                    <img src="./img/icon-512x512.png" alt="" class="">
-                                    <i class="far fa-user fz-60 clr-grey dis-none"></i>
-                                </div>
-                                <div class="buruh-right relative w-100">
-                                    <span class="buruh-name dis-block clr-grey">Lorem Ipsum Dolor Sit Amet</span>
-                                    <div class="buruh-hover-1">
-                                        <div class="flex-start buruh-date">
-                                            <span class="green">18</span>
-                                            <span class="red">19</span>
-                                            <span class="green">20</span>
-                                            <span class="green">21</span>
-                                            <span class="green">22</span>
-                                            <span class="grey">23</span>
-                                        </div>
-                                        <p class="p-0 m-0 fz-12 buruh-rekap flex-start gap-10 clr-grey">
-                                            <span>H 3</span>
-                                            <span>A 1</span>
-                                            <span>I 2</span>
-                                            <span>S 1</span>
-                                        </p>
-                                    </div>
-                                    <div class="buruh-hover-2 gap-5">
-                                        <button class="blue barlow">Detail</button>
-                                        <button class="orange barlow">Sakit</button>
-                                        <button class="grey barlow">Izin</button>
-                                        <button class="green barlow">Hadir</button>
-                                    </div>
-                                    
-                                </div>
-                            </div>
-                            <div class="buruh-group gap-10">
-                                <div class="buruh-left grid-center">
-                                    <img src="./img/icon-512x512.png" alt="" class="">
-                                    <i class="far fa-user fz-60 clr-grey dis-none"></i>
-                                </div>
-                                <div class="buruh-right relative w-100">
-                                    <span class="buruh-name dis-block clr-grey">Lorem Ipsum Dolor Sit Amet</span>
-                                    <div class="buruh-hover-1">
-                                        <div class="flex-start buruh-date">
-                                            <span class="green">18</span>
-                                            <span class="red">19</span>
-                                            <span class="green">20</span>
-                                            <span class="green">21</span>
-                                            <span class="green">22</span>
-                                            <span class="grey">23</span>
-                                        </div>
-                                        <p class="p-0 m-0 fz-12 buruh-rekap flex-start gap-10 clr-grey">
-                                            <span>H 3</span>
-                                            <span>A 1</span>
-                                            <span>I 2</span>
-                                            <span>S 1</span>
-                                        </p>
-                                    </div>
-                                    <div class="buruh-hover-2 gap-5">
-                                        <button class="blue barlow">Detail</button>
-                                        <button class="orange barlow">Sakit</button>
-                                        <button class="grey barlow">Izin</button>
-                                        <button class="green barlow">Hadir</button>
-                                    </div>
-                                    
-                                </div>
-                            </div>
-                            <div class="buruh-group gap-10">
-                                <div class="buruh-left grid-center">
-                                    <img src="./img/icon-512x512.png" alt="" class="">
-                                    <i class="far fa-user fz-60 clr-grey dis-none"></i>
-                                </div>
-                                <div class="buruh-right relative w-100">
-                                    <span class="buruh-name dis-block clr-grey">Lorem Ipsum Dolor Sit Amet</span>
-                                    <div class="buruh-hover-1">
-                                        <div class="flex-start buruh-date">
-                                            <span class="green">18</span>
-                                            <span class="red">19</span>
-                                            <span class="green">20</span>
-                                            <span class="green">21</span>
-                                            <span class="green">22</span>
-                                            <span class="grey">23</span>
-                                        </div>
-                                        <p class="p-0 m-0 fz-12 buruh-rekap flex-start gap-10 clr-grey">
-                                            <span>H 3</span>
-                                            <span>A 1</span>
-                                            <span>I 2</span>
-                                            <span>S 1</span>
-                                        </p>
-                                    </div>
-                                    <div class="buruh-hover-2 gap-5">
-                                        <button class="blue barlow">Detail</button>
-                                        <button class="orange barlow">Sakit</button>
-                                        <button class="grey barlow">Izin</button>
-                                        <button class="green barlow">Hadir</button>
-                                    </div>
-                                    
-                                </div>
-                            </div>
-                            <div class="buruh-group gap-10">
-                                <div class="buruh-left grid-center">
-                                    <img src="./img/icon-512x512.png" alt="" class="">
-                                    <i class="far fa-user fz-60 clr-grey dis-none"></i>
-                                </div>
-                                <div class="buruh-right relative w-100">
-                                    <span class="buruh-name dis-block clr-grey">Lorem Ipsum Dolor Sit Amet</span>
-                                    <div class="buruh-hover-1">
-                                        <div class="flex-start buruh-date">
-                                            <span class="green">18</span>
-                                            <span class="red">19</span>
-                                            <span class="green">20</span>
-                                            <span class="green">21</span>
-                                            <span class="green">22</span>
-                                            <span class="grey">23</span>
-                                        </div>
-                                        <p class="p-0 m-0 fz-12 buruh-rekap flex-start gap-10 clr-grey">
-                                            <span>H 3</span>
-                                            <span>A 1</span>
-                                            <span>I 2</span>
-                                            <span>S 1</span>
-                                        </p>
-                                    </div>
-                                    <div class="buruh-hover-2 gap-5">
-                                        <button class="blue barlow">Detail</button>
-                                        <button class="orange barlow">Sakit</button>
-                                        <button class="grey barlow">Izin</button>
-                                        <button class="green barlow">Hadir</button>
-                                    </div>
-                                    
-                                </div>
-                            </div>
-                            <div class="buruh-group gap-10">
-                                <div class="buruh-left grid-center">
-                                    <img src="./img/icon-512x512.png" alt="" class="">
-                                    <i class="far fa-user fz-60 clr-grey dis-none"></i>
-                                </div>
-                                <div class="buruh-right relative w-100">
-                                    <span class="buruh-name dis-block clr-grey">Lorem Ipsum Dolor Sit Amet</span>
-                                    <div class="buruh-hover-1">
-                                        <div class="flex-start buruh-date">
-                                            <span class="green">18</span>
-                                            <span class="red">19</span>
-                                            <span class="green">20</span>
-                                            <span class="green">21</span>
-                                            <span class="green">22</span>
-                                            <span class="grey">23</span>
-                                        </div>
-                                        <p class="p-0 m-0 fz-12 buruh-rekap flex-start gap-10 clr-grey">
-                                            <span>H 3</span>
-                                            <span>A 1</span>
-                                            <span>I 2</span>
-                                            <span>S 1</span>
-                                        </p>
-                                    </div>
-                                    <div class="buruh-hover-2 gap-5">
-                                        <button class="blue barlow">Detail</button>
-                                        <button class="orange barlow">Sakit</button>
-                                        <button class="grey barlow">Izin</button>
-                                        <button class="green barlow">Hadir</button>
-                                    </div>
-                                    
-                                </div>
-                            </div>
-                            <div class="buruh-group gap-10">
-                                <div class="buruh-left grid-center">
-                                    <img src="./img/icon-512x512.png" alt="" class="">
-                                    <i class="far fa-user fz-60 clr-grey dis-none"></i>
-                                </div>
-                                <div class="buruh-right relative w-100">
-                                    <span class="buruh-name dis-block clr-grey">Lorem Ipsum Dolor Sit Amet</span>
-                                    <div class="buruh-hover-1">
-                                        <div class="flex-start buruh-date">
-                                            <span class="green">18</span>
-                                            <span class="red">19</span>
-                                            <span class="green">20</span>
-                                            <span class="green">21</span>
-                                            <span class="green">22</span>
-                                            <span class="grey">23</span>
-                                        </div>
-                                        <p class="p-0 m-0 fz-12 buruh-rekap flex-start gap-10 clr-grey">
-                                            <span>H 3</span>
-                                            <span>A 1</span>
-                                            <span>I 2</span>
-                                            <span>S 1</span>
-                                        </p>
-                                    </div>
-                                    <div class="buruh-hover-2 gap-5">
-                                        <button class="blue barlow">Detail</button>
-                                        <button class="orange barlow">Sakit</button>
-                                        <button class="grey barlow">Izin</button>
-                                        <button class="green barlow">Hadir</button>
-                                    </div>
-                                    
-                                </div>
-                            </div>
-                            <div class="buruh-group gap-10">
-                                <div class="buruh-left grid-center">
-                                    <img src="./img/icon-512x512.png" alt="" class="">
-                                    <i class="far fa-user fz-60 clr-grey dis-none"></i>
-                                </div>
-                                <div class="buruh-right relative w-100">
-                                    <span class="buruh-name dis-block clr-grey">Lorem Ipsum Dolor Sit Amet</span>
-                                    <div class="buruh-hover-1">
-                                        <div class="flex-start buruh-date">
-                                            <span class="green">18</span>
-                                            <span class="red">19</span>
-                                            <span class="green">20</span>
-                                            <span class="green">21</span>
-                                            <span class="green">22</span>
-                                            <span class="grey">23</span>
-                                        </div>
-                                        <p class="p-0 m-0 fz-12 buruh-rekap flex-start gap-10 clr-grey">
-                                            <span>H 3</span>
-                                            <span>A 1</span>
-                                            <span>I 2</span>
-                                            <span>S 1</span>
-                                        </p>
-                                    </div>
-                                    <div class="buruh-hover-2 gap-5">
-                                        <button class="blue barlow">Detail</button>
-                                        <button class="orange barlow">Sakit</button>
-                                        <button class="grey barlow">Izin</button>
-                                        <button class="green barlow">Hadir</button>
-                                    </div>
-                                    
-                                </div>
-                            </div>
-                            <div class="buruh-group gap-10">
-                                <div class="buruh-left grid-center">
-                                    <img src="./img/icon-512x512.png" alt="" class="">
-                                    <i class="far fa-user fz-60 clr-grey dis-none"></i>
-                                </div>
-                                <div class="buruh-right relative w-100">
-                                    <span class="buruh-name dis-block clr-grey">Lorem Ipsum Dolor Sit Amet</span>
-                                    <div class="buruh-hover-1">
-                                        <div class="flex-start buruh-date">
-                                            <span class="green">18</span>
-                                            <span class="red">19</span>
-                                            <span class="green">20</span>
-                                            <span class="green">21</span>
-                                            <span class="green">22</span>
-                                            <span class="grey">23</span>
-                                        </div>
-                                        <p class="p-0 m-0 fz-12 buruh-rekap flex-start gap-10 clr-grey">
-                                            <span>H 3</span>
-                                            <span>A 1</span>
-                                            <span>I 2</span>
-                                            <span>S 1</span>
-                                        </p>
-                                    </div>
-                                    <div class="buruh-hover-2 gap-5">
-                                        <button class="blue barlow">Detail</button>
-                                        <button class="orange barlow">Sakit</button>
-                                        <button class="grey barlow">Izin</button>
-                                        <button class="green barlow">Hadir</button>
-                                    </div>
-                                    
-                                </div>
-                            </div>
-                            <div class="buruh-group gap-10">
-                                <div class="buruh-left grid-center">
-                                    <img src="./img/icon-512x512.png" alt="" class="">
-                                    <i class="far fa-user fz-60 clr-grey dis-none"></i>
-                                </div>
-                                <div class="buruh-right relative w-100">
-                                    <span class="buruh-name dis-block clr-grey">Lorem Ipsum Dolor Sit Amet</span>
-                                    <div class="buruh-hover-1">
-                                        <div class="flex-start buruh-date">
-                                            <span class="green">18</span>
-                                            <span class="red">19</span>
-                                            <span class="green">20</span>
-                                            <span class="green">21</span>
-                                            <span class="green">22</span>
-                                            <span class="grey">23</span>
-                                        </div>
-                                        <p class="p-0 m-0 fz-12 buruh-rekap flex-start gap-10 clr-grey">
-                                            <span>H 3</span>
-                                            <span>A 1</span>
-                                            <span>I 2</span>
-                                            <span>S 1</span>
-                                        </p>
-                                    </div>
-                                    <div class="buruh-hover-2 gap-5">
-                                        <button class="blue barlow">Detail</button>
-                                        <button class="orange barlow">Sakit</button>
-                                        <button class="grey barlow">Izin</button>
-                                        <button class="green barlow">Hadir</button>
-                                    </div>
-                                    
-                                </div>
-                            </div>
-
-                            
-                        </div>
-                    </div>
-
-                    
+                <img id="dlhp-logo" src="./img/logo-dlhp.png" alt="" class="dis-block">
+                <div id="login-text" class="align-center fz-14 clr-darkgrey p-10 w-100">
+                    <p class="p-0 m-0">Dinas Lingkungan Hidup dan Persampahan</p>
+                    <p class="p-0 m-0 mt-1">Bidang Tata Lingkungan</p>
                 </div>
-
-                <!-- Form -->
-                <div id="form-absen" class="p-20 vh-100 scroll grid-center">
-                    <div id="form-content"  class="relative">
-                        <!-- capture box -->
-                        <div id="capture-box" class="">
-                            <div id="capture-media" class="green relative">
-                                <video src=""></video>
-                                <img src="" alt="" class="dis-none">
-                                <span><i class="fas fa-camera"></i></span>
-                            </div>
-                        </div>
-                        <br>
-
-                        <!-- lokasi kerja -->
-                        <div class="form-group mb-2">
-                            <i class="fas fa-location-dot green p-10 grid-center borad-5"></i>|
-                            <div class="form-input ">
-                                <select name="" id="lokasi-select" class=" w-100 barlow">
-                                    <option value="" selected disabled> -- lokasi kerja</option>
-                                    <option value="Lokasi 01">Lokasi 01</option>
-                                    <option value="Lokasi 02">Lokasi 02</option>
-                                    <option value="Lokasi 03">Lokasi 03</option>
-                                    <option value="Lokasi 04">Lokasi 04</option>
-                                </select>
-                                <div id="lokasi-kerja-manual" class="w-100 dis-none barlow">
-                                    <input type="text" class="" id="lokasi-input">
-                                    <i class="fas fa-xmark"></i>
-                                </div>
-                            </div>
-                        </div>
-
-                        <!-- Keterangan -->
-                        <textarea name="" id="form-keterangan" class="w-100 borad-5 barlow" rows="4" placeholder="Keterangan (opsional)"></textarea>
-                        
-                        <div class="hr grey mb-2 mt-2"></div>
-
-                        <!-- Kirim -->
-                        <button class="w-100 p-10 borad-5 align-center green" id="form-submit">Kirim &nbsp; <i class="fas fa-paper-plane"></i></button>
-                    </div>
+                <br><br>
+                
+                <div id="login-header" class="align-center m-auto uppercase clr-darkgrey">
+                    <h1>Absensi Buruh</h1>
+                    <h3>Taman dan Berem</h3>
                 </div>
+                <div class="hr grey"></div>
 
-                <!-- Detail buruh -->
-                <div id="detail-buruh" class="p-20 scroll vh-100">
-                    <div class="detail-buruh">
-                        <div id="detail-header" class="gap-10 borad-10">
-                            <div class="buruh-photo borad-10 green grid-center">
-                                <img src="" alt="" class="dis-none">
-                                <i class="far fa-user fz-40"></i>
-                            </div>
-                            <span class="fz-50">|</span>
-                            <div class="buruh-nama w-100 prociono p-0 grid-center">
-                                <h2 class="m-0 p-0 w-100 align-left">Lorem Ipsum - 1</h2>
-                                <h5 class="m-0 p-0 w-100 align-left">Buruh Taman</h5>
-                            </div>
+                <div id="login-google" class="m-auto flex-center">
+                    <div class="fit-content">
+                        <div class="g_id_signin"
+                            data-type="standard"
+                            data-shape="pill"
+                            data-text="continue_with"
+                            data-theme="filled_blue"
+                            data-size="large">
                         </div>
-                        <div class="hr grey p-2"></div>
-                        <div id="buruh-data" class="barlow">
-                            <div class="data-head flex-beetwen mb-3">
-                                <i class="fas fa-chevron-left"></i>
-                                <span class="month-head fz-18 uppercase dis-block bold">Oktober 2025</span>
-                                <i class="fas fa-chevron-right"></i>
-                            </div>
-                            <div class="data-hari w-100 bolder">
-                                <span class="clr-red">Min</span>
-                                <span>Sen</span>
-                                <span>Sel</span>
-                                <span>Rab</span>
-                                <span>Kam</span>
-                                <span>Jum</span>
-                                <span>Sab</span>
-                            </div>
-                            <div class="data-group">
-                                <div class="data-pertama">
-                                    <span class="green">01</span>
-                                    <span class="green">02</span>
-                                    <span class="green">03</span>
-                                    <span class="green">04</span>
-                                    <span class="green">05</span>
-                                    <span class="red">06</span>
-                                    <span class="green">07</span>
-                                    <span class="green">08</span>
-                                    <span class="green">09</span>
-                                    <span class="red">10</span>
-                                    <span class="green">11</span>
-                                    <span class="green">12</span>
-                                    <span class="grey">13</span>
-                                    <span class="green">14</span>
-                                    <span class="green">15</span>
-                                </div>
-                                <div class="data-kedua">
-                                    <span class="green">16</span>
-                                    <span class="green">17</span>
-                                    <span class="grey">18</span>
-                                    <span class="green">19</span>
-                                    <span class="green">20</span>
-                                    <span class="green">21</span>
-                                    <span class="grey">22</span>
-                                    <span class="green">23</span>
-                                    <span class="green">24</span>
-                                    <span class="green">25</span>
-                                    <span class="green">26</span>
-                                    <span class="red">27</span>
-                                    <span class="green">28</span>
-                                    <span class="green">29</span>
-                                    <span class="green">30</span>
-                                </div>
-                            </div>
-                        </div>
-                        <!-- Ambil Absen -->
-                         <div id="ambil-absen">
-                            
-                         </div>
+                    </div>
+                    <div id="g_id_onload"
+                        data-client_id="795274958306-a5gs7djtrc92vhmntvpttekf75umcbm4.apps.googleusercontent.com"
+                        data-context="signin"
+                        data-ux_mode="popup"
+                        data-callback="loginGoogle"
+                        data-nonce=""
+                        data-auto_prompt="false">
                     </div>
                 </div>
             </div>
         </div>
+
+        <div id="dashboard">
+
+        </div>
+
+        <div id="detail"></div>
+
+        <div id="form"></div>
+
     </div>
 
-    <script src="app2.js"></script>
     <script>
         setTimeout(() => {
-           STATIC.changeContent("login");
-        }, 3000)
-        
-        
+            document.getElementById("the-loader").classList.add("dis-none");
+        }, 2500);
     </script>
+
 
 </body>
 </html>
