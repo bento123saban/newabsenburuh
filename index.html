@@ -15,7 +15,8 @@
 </head>
 
 <body translate="no" class="barlow hidden grid-center vh-100">
-    <div id="the-loader" class="vh-100 vw-100 grid-center ">
+
+    <div id="the-loader" class="vh-100 vw-100 grid-center hidden">
         <div class="loader"></div>
         <img id="loader-img" src="./img/tree-bg.png" alt="">
     </div>
@@ -103,12 +104,19 @@
             <div id="buruh-list" class="clr-darkgrey">
 
                 <div class="buruh-group">
-                    <div class="buruh-img  grid-center borad-10 hidden">
+                    <div class="buruh-img  grid-center borad-10 hidden dis-none">
                         <i class="fas fa-user fz-30 clr-white"></i>
                         <img src="" class="buruh-photo dis-none" alt="">
                     </div>
-                    <div class="buruh-short">
-                        <h5>Benhard Y. Sabandar</h5>
+                    <div class="buruh-short w-100">
+                        <h4 class="">Benhard Y. Sabandar</h4>
+                        <div class="buruh-5hari flex-start gap-10 pt-1">
+                            <span class="buruh-hari grid-center borad-5 clr-white green"></span>
+                            <span class="buruh-hari grid-center borad-5 clr-white green"></span>
+                            <span class="buruh-hari grid-center borad-5 clr-white green"></span>
+                            <span class="buruh-hari grid-center borad-5 clr-white red"></span>
+                            <span class="buruh-hari grid-center borad-5 clr-white green"></span>
+                        </div>
                     </div>
                 </div>
                 <div class="buruh-group">
@@ -116,7 +124,7 @@
                         <i class="fas fa-user fz-30 clr-white"></i>
                         <img src="" class="buruh-photo dis-none" alt="">
                     </div>
-                    <div class="buruh-short">
+                    <div class="buruh-short w-100">
                         <h5>Benhard Y. Sabandar</h5>
                         
                     </div>
@@ -138,12 +146,14 @@
 
         function test () {
             setTimeout(() => {
-                STATIC.changeContent('dashboard')
+                STATIC.changeContent('login')
             },1000); 
-
-            return
             setTimeout(() => {
                 STATIC.changeContent('loading')
+            },2000); 
+            // return
+            setTimeout(() => {
+                STATIC.changeContent('dashboard')
             }, 3000);
 
             return

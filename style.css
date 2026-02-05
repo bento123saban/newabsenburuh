@@ -1,5 +1,4 @@
 
-
 /* Loader */
 #the-loader {
     border-width: 4px !important;
@@ -139,7 +138,7 @@ body:has(#app.loading) #the-loader {
     background-color: rgba(0,0,0, .2);
 }
 .buruh-group {
-    background: linear-gradient(45deg, white, rgba(255,255,255, .2));
+    background: linear-gradient(45deg, white, rgba(255,255,255, .5));
     padding: 10px;
     border-radius: 10px;
     box-shadow: 0 0 10px rgba(0,0,0, .1);
@@ -148,4 +147,17 @@ body:has(#app.loading) #the-loader {
     align-items: center;
     gap: 10px;
     margin-top: 10px;
+}
+.buruh-short h4 {
+    padding: 0;
+    padding-bottom: 3px;
+    border-bottom: 1.2px solid grey !important;
+    width: 100% !important;
+    display: block;
+    margin: 0;
+}
+.buruh-hari {
+    border: 2px solid white !important;
+    width: 20px;
+    aspect-ratio: 1;
 }
