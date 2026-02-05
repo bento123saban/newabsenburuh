@@ -1,42 +1,6 @@
 
-#app {
-    max-width: 500px;
-    width: 100%;
-    margin: 0 auto;
-    padding: 0;
-    height: calc(100vh - 0px) !important;
-    overflow: hidden;
-    position: relative;
-    background: url("./img/hp-bg.png");
-    background-position: center;
-    background-size: cover;
-}
 
-#main-bg {
-    height: 100vh;
-    width: 100%;
-}
-#main-bg img {
-    object-fit: cover;
-    height: 100%;
-    width: 100%;
-}
-
-#tree {
-    position: absolute;
-    bottom: -20px;
-    left: 50%;
-    transform: translateX(-50%);
-    width: 80%;
-    max-width: 300px;
-    z-index: 1000;
-}
-#tree img {
-    object-fit: 100%;
-    height: 100%;
-    width: 100%;
-}
-
+/* Loader */
 #the-loader {
     border-width: 4px !important;
     transition: all 0.5s ease;
@@ -44,44 +8,87 @@
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    z-index: 10000000000000000000000000;
+    z-index: -10;
+}
+body:has(#app.loading) #the-loader {
+    object-fit: cover;
+    height: 100%;
+    width: 100%;
+    border-radius: 100000px;
 }
 #the-loader .loader {
     border-width: 4px !important;
     width: 100px;
-    transition: all 5s cubic-bezier(0.175, 0.885, 0.32, 1.275);
 }
 #loader-img {
     position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    width: 60px;
-    aspect-ratio: 1;
-    overflow: hidden;
-    border-radius: 10000px;
-    border: 3px solid #fff;
+    width: 40px;
 }
-#loader-img img {
-    object-fit: cover;
+
+/* Content */
+.content {
+    height: 100vh;
     width: 100%;
-    height: 100%;
+    padding: 20px;
+    overflow: scroll;
+    position: relative;
 }
 
 
+/* APP */
+#app {
+    max-width: 500px;
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden !important;
+    background: url("./img/hp-bg.png");
+    background-position: center;
+    background-attachment: fixed;
+    background-size: cover;
+    transition: all .5s cubic-bezier(0.68, 0, 0.265, 1.1);
+    position: relative;
+}
+#app.loading {
+    height: 0px !important;
+    width: 0px !important;
+    border-radius: 100000px;
+}
+#app.loading * {
+    display: none !important;
+}
 
-
-#login {
+/* Tree */
+#tree {
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    transform: translate(-50%, calc(-100% + 20px));
+    width: 80%;
+    max-width: 500px;
+    transition: all 2s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+#app.loading #tree {
+    overflow: hidden;
+    height: 40px !important;
+    width: 40px !important;
     position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    z-index: 7;
+}
+#tree img {
+    object-fit: cover;
+    height: 100%;
     width: 100%;
-    padding: 0px;
-    height: 100vh;
 }
 
+
+/* Login */
+#login {display: none;}
+#app.login #login {display: block;}
 #login-shape {
     position: absolute;
     top: 0;
@@ -90,8 +97,9 @@
     width: calc(100% - 40px);
     height: calc(100vh - 20px);
     background: linear-gradient(0deg, rgba(255,255,255, .6), rgba(255,255,255, 0));
-    border: 1px solid #fff;
+    border-right: .5px solid #fff;
     border-radius: 0 0 20px 20px;
+    transition: all .8s ease-out;
 }
 #dlhp-logo {
     margin: 0 auto;
@@ -102,4 +110,42 @@
 #login-text {
     z-index: 100000;
     width: 300px;
+}
+
+
+/* Dashboard */
+#dashboard {display: none;}
+#app.dashboard #dashboard {display: block;
+}
+#app.dashboard #tree {
+    transform: translate(-10%, calc(-100% + 20px));
+    width: 100% !important;
+}
+.dash-userphoto i {
+    aspect-ratio: 1;
+    width: 80px;
+    border: 3px solid white;
+    border-radius: 1000000px;
+    background: rgba(255,255,255, .4);
+}
+.notif-group {
+    border: 2px solid white;
+    background: rgba(255,255,255, .4);
+    border-radius: 10px;
+}
+.buruh-img {
+    width: 60px;
+    aspect-ratio: 1;
+    background-color: rgba(0,0,0, .2);
+}
+.buruh-group {
+    background: linear-gradient(45deg, white, rgba(255,255,255, .2));
+    padding: 10px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0,0,0, .1);
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 10px;
+    margin-top: 10px;
 }

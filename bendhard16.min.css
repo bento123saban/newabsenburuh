@@ -352,7 +352,7 @@ input::-webkit-inner-spin-button {
 
 /* paddingq top set */
 .pt-0 {padding-top: 0 !important;}
-.pb-1 {padding-top: .5rem !important;}
+.pt-1 {padding-top: .5rem !important;}
 .pt-2 {padding-top: 1rem !important;}
 .pt-3 {padding-top: 1.5rem !important;}
 .pt-4 {padding-top: 2rem !important;}
@@ -600,34 +600,20 @@ input::-webkit-inner-spin-button {
     border-right-color: rgba(98, 243, 103, 0);
     animation: l15 1s infinite linear;
 }
-.loader-content.off .loader {
-    border-right-color: red;
-}
-.loader-text {
-    position: absolute;
-    top: calc(100% + 15px);
-    left: 50%;
-    transform: translateX(-50%);
-    width: 200px;
-    color: limegreen;
-}
-.loader-content.off .loader-text {
-}
-.loader::before,
+/*.loader::before, */
 .loader::after {    
     content: "";
     grid-area: 1/1;
-    margin: 2px;
+    margin: 3px;
     border: inherit;
     border-radius: 50%;
-    animation: l15 2s infinite;
-}
-.loader::after {
-    margin: 8px;
-    animation-duration: 3s;
+    animation: l16 1s infinite linear;
 }
 @keyframes l15{ 
-    100%{transform: rotate(1turn)}
+    100%{transform: rotate(-1turn)}
+}
+@keyframes l16{ 
+    100%{transform: rotate(2turn)}
 }
 
 .code-inputer {

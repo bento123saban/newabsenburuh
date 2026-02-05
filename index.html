@@ -10,75 +10,152 @@
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="./font/fontawsome/css/all.css">
     <meta name="theme-color" content="#000000">
-    <link rel="manifest" href="manifest.json"> 
+    <!-- <link rel="manifest" href="manifest.json">  -->
     <script src="https://accounts.google.com/gsi/client" async defer></script>
 </head>
 
-<body translate="no" class=" barlow">
-
-    <div id="app" class="">
-        <div id="the-loader" class="white vh-100 vw-100 grid-center">
-            <div class="loader"></div>
-            <div id="loader-img">
-                <img src="./img/loader web.png" alt="">
-            </div>
-        </div>
-
-        <div id="login" class="">
-
-            <div id="login-shape"></div>
-            <div id="login-content" class="">
-                <br><br><br><br><br><br>
-                
-                <img id="dlhp-logo" src="./img/logo-dlhp.png" alt="" class="dis-block">
-                <div id="login-text" class="align-center fz-14 clr-darkgrey p-10 w-100">
-                    <p class="p-0 m-0">Dinas Lingkungan Hidup dan Persampahan</p>
-                    <p class="p-0 m-0 mt-1">Bidang Tata Lingkungan</p>
-                </div>
-                <br><br>
-                
-                <div id="login-header" class="align-center m-auto uppercase clr-darkgrey">
-                    <h1>Absensi Buruh</h1>
-                    <h3>Taman dan Berem</h3>
-                </div>
-                <div class="hr grey"></div>
-
-                <div id="login-google" class="m-auto flex-center">
-                    <div class="fit-content">
-                        <div class="g_id_signin"
-                            data-type="standard"
-                            data-shape="pill"
-                            data-text="continue_with"
-                            data-theme="filled_blue"
-                            data-size="large">
-                        </div>
-                    </div>
-                    <div id="g_id_onload"
-                        data-client_id="795274958306-a5gs7djtrc92vhmntvpttekf75umcbm4.apps.googleusercontent.com"
-                        data-context="signin"
-                        data-ux_mode="popup"
-                        data-callback="loginGoogle"
-                        data-nonce=""
-                        data-auto_prompt="false">
-                    </div>
-                </div>
-            </div>
-        </div>
-
-        <div id="dashboard">
-
-        </div>
-
-        <div id="detail"></div>
-
-        <div id="form"></div>
-
+<body translate="no" class="barlow hidden grid-center vh-100">
+    <div id="the-loader" class="vh-100 vw-100 grid-center ">
+        <div class="loader"></div>
+        <img id="loader-img" src="./img/tree-bg.png" alt="">
     </div>
 
+    <div id="app" class="loading">
+        
+        <div id="tree">
+            <img src="./img/tree-bg.png" alt="">
+        </div>
+
+        <!-- Login -->
+        <div id="login" class="content">
+            <div id="login-shape"></div>
+            <br><br><br><br><br><br>
+            
+            <img id="dlhp-logo" src="./img/logo-dlhp.png" alt="" class="dis-block">
+            <div id="login-text" class="align-center fz-14 clr-darkgrey p-10 w-100 uppercase">
+                <p class="p-0 m-0">Dinas Lingkungan Hidup dan Persampahan</p>
+                <p class="p-0 m-0 mt-1">Bidang Tata Lingkungan</p>
+            </div>
+            <br><br>
+            
+            <div id="login-header" class="align-center m-auto uppercase clr-darkgrey">
+                <h1>Absensi Buruh</h1>
+                <h3>Taman dan Berem</h3>
+            </div>
+            <div class="hr grey"></div>
+
+            <div id="login-google" class="m-auto dis-none">
+                <div class="fit-content">
+                    <div class="g_id_signin"
+                        data-type="standard"
+                        data-shape="pill"
+                        data-text="continue_with"
+                        data-theme="filled_blue"
+                        data-size="large">
+                    </div>
+                </div>
+                <div id="g_id_onload"
+                    data-client_id="795274958306-a5gs7djtrc92vhmntvpttekf75umcbm4.apps.googleusercontent.com"
+                    data-context="signin"
+                    data-ux_mode="popup"
+                    data-callback="loginGoogle"
+                    data-nonce=""
+                    data-auto_prompt="false">
+                </div>
+            </div>
+        </div>
+
+        <!-- Dashboard -->
+        <div id="dashboard" class="content">
+            
+            <!-- Dashboard Header -->
+            <div id="dash-header" class="flex-beetwen">
+                <div class="dash-username clr-darkgrey">
+                    <h4 class="p-0 m-0 pb-1 pt-2">Selamat Pagi</h4>
+                    <h2 class="p-0 m-0">Bendhard16</h2>
+                    <span class="p-0 m-0 fz-12">bendhard16@gmail.com</span>
+                </div>
+                <div class="dash-userphoto">
+                    <i class="fas fa-user fz-40 clr-white grid-center"></i>
+                </div>
+            </div>
+            
+            <div class="hr white"></div>
+
+            <!-- Dashboard Notif -->
+            <div class="clr-white"><i class="fas fa-bell fz-20"></i>&nbsp; <b>Pemberitahuan</b></div>
+            <div id="notif-list" class="mt-1">
+                <div class="notif-group mb-1 p-10">
+                    <span class="clr-red notif-head p-0 m-0 bold pb-1 dis-block">4 Buruh Belum di absen hari ini</span>
+                    <p class="m-0 p-0 fz-14">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                </div>
+                <div class="notif-group mb-1 p-10">
+                    <span class="clr-red notif-head p-0 m-0 bold pb-1 dis-block">4 Buruh Belum di absen hari ini</span>
+                    <p class="m-0 p-0 fz-14">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                </div>
+            </div>
+
+            <div class="hr white"></div>
+
+            <!-- Daftar Buruh -->
+            <h4 class="align-center uppercase clr-darkgrey">Daftar Buruh</h4>
+            <div class="buruh-filter"></div>
+            <div id="buruh-list" class="clr-darkgrey">
+
+                <div class="buruh-group">
+                    <div class="buruh-img  grid-center borad-10 hidden">
+                        <i class="fas fa-user fz-30 clr-white"></i>
+                        <img src="" class="buruh-photo dis-none" alt="">
+                    </div>
+                    <div class="buruh-short">
+                        <h5>Benhard Y. Sabandar</h5>
+                    </div>
+                </div>
+                <div class="buruh-group">
+                    <div class="buruh-img grid-center borad-10 hidden">
+                        <i class="fas fa-user fz-30 clr-white"></i>
+                        <img src="" class="buruh-photo dis-none" alt="">
+                    </div>
+                    <div class="buruh-short">
+                        <h5>Benhard Y. Sabandar</h5>
+                        
+                    </div>
+                </div>
+            </div>
+
+
+        </div>
+
+        <div id="detail" class="content"></div>
+
+        <div id="form" class="content"></div>
+
+        
+    </div>
+
+    <script src="app2.js"></script>
     <script>
-        setTimeout(() => {
-            document.getElementById("the-loader").classList.add("dis-none");
-        }, 2500);
+
+        function test () {
+            setTimeout(() => {
+                STATIC.changeContent('dashboard')
+            },1000); 
+
+            return
+            setTimeout(() => {
+                STATIC.changeContent('loading')
+            }, 3000);
+
+            return
+            setTimeout(() => {
+                STATIC.changeContent('loading')
+            }, 7500);  
+            setTimeout(() => {
+                STATIC.changeContent('dashboard')
+            }, 10000);      
+        }
+
+        test()
     </script>
 
 

@@ -284,8 +284,7 @@ class RequestManager {
 class STATIC {
     
     static changeContent(targetId){
-        const main = document.querySelector("#main")
-        main.className = `content grid-center ${targetId}`
+        document.querySelector("#app").className = targetId + ""
     }
     static verifyController(data){
         return {
