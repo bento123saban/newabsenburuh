@@ -123,23 +123,70 @@ body:has(#app.loading) #the-loader {
 .dash-userphoto i {
     aspect-ratio: 1;
     width: 80px;
-    border: 3px solid white;
+    border: 1.5px solid lightgray;
     border-radius: 1000000px;
     background: rgba(255,255,255, .4);
 }
 .notif-group {
-    border: 2px solid white;
+    border: 1.5px solid lightgray;
     background: rgba(255,255,255, .4);
     border-radius: 10px;
 }
-#buruh-list span {
+#buruh-date-header span{
+    border: 1.5px solid lightgray;
+    padding: 6px 0;
+    border-radius: 10px;
+    background-color: rgba(255,255,255, .4);
+}
+#buruh-date-header i {
+    height: 100%;
+    background: linear-gradient(45deg, green, limegreen);
+    color: white;
+    display: block;
+    width: 45px;
+    aspect-ratio: 1;
+    display: grid;
+    place-items: center;
+    border-radius: 10px;
+    border: 1.5px solid lightgray;
+}
+#calendar-days {
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    gap: 5px;
+}
+#calendar-days span {
+    background: linear-gradient(45deg, white, transparent);
+    border: 1.3px solid lightgray;
+    text-align: center;
+    padding: 7px 0;
+    border-radius: 10px;
+    font-size: 14px;
+}
+#calendar-date {
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    gap: 5px;
+}
+.date-box {
+    aspect-ratio: 1;
+    display: grid;
+    place-items: center;
+    border-radius: 10px;
+    font-weight: bolder;
+    border: 1.5px solid lightgray;
+    background: linear-gradient(45deg, #ffffff80, #ffffff99);
+}
+#data-list {background: linear-gradient(45deg, rgba(255,255,255, .3), rgba(255,255,255, .6));}
+#data-list span {
     width: 100%;
     padding: 10px;
     display: block;
-    border-bottom: 2px dotted dimgray;
+    border-bottom: 2px dotted rgba(0,0,0, .2);
     margin-bottom: 10px;
     font-weight: bold;
 }
+#data-date {border: 1.3px solid #00000090;}
 #sudah-absen-list {
     display: flex;
     justify-content: space-evenly;
@@ -150,8 +197,8 @@ body:has(#app.loading) #the-loader {
     background: linear-gradient(45deg, white, rgba(255,255,255, .7));
     padding: 4px;
     border-radius: 10px;
-    box-shadow: 0 0 10px rgba(0,0,0, .1);
-    margin-bottom: 15px;
+    border: 1.5px solid lightgray;
+    margin-bottom: 10px;
     width: 100%;
     height: fit-content;
 }
