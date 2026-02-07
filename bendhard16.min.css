@@ -411,6 +411,8 @@ input::-webkit-inner-spin-button {
 }
 .color-delivery, .color-pickup, .clr-red, [data-color="red"] {color: red !important;}
 .br-delivery, .br-pickup, .br-red {border-color: red !important;}
+.clr-darkred {color: darkred !important;}
+
 
 .delivery, .pickup, .red, [data-bg="red"] {
     background: linear-gradient(45deg, red, darkred) !important;

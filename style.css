@@ -43,7 +43,8 @@ body:has(#app.loading) #the-loader {
     width: 100vw;
     height: 100vh;
     overflow: hidden !important;
-    background: url("./img/hp-bg.png");
+    background: url("./img/Android\ Compact\ 3.webp");
+    /* background-color: #0a0e00; */
     background-position: center;
     background-attachment: fixed;
     background-size: cover;
@@ -129,7 +130,7 @@ body:has(#app.loading) #the-loader {
 }
 .notif-group {
     border: 1.5px solid lightgray;
-    background: rgba(255,255,255, .4);
+    background: linear-gradient(45deg, white, #ffffff60);
     border-radius: 10px;
 }
 #buruh-date-header span{

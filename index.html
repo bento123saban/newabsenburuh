@@ -23,25 +23,25 @@
 
     <div id="app" class="loading">
         
-        <div id="tree">
+        <div id="tree" class="dis-none">
             <img src="./img/tree-bg.png" alt="">
         </div>
 
         <!-- Login -->
         <div id="login" class="content">
-            <div id="login-shape"></div>
-            <br><br><br><br><br><br>
+            <div id="login-shape" class="dis-none"></div>
+            <br><br><br>
             
             <img id="dlhp-logo" src="./img/logo-dlhp.png" alt="" class="dis-block">
-            <div id="login-text" class="align-center fz-14 clr-darkgrey p-10 w-100 uppercase">
+            <div id="login-text" class="align-center fz-14 clr-white p-10 w-100 uppercase">
                 <p class="p-0 m-0">Dinas Lingkungan Hidup dan Persampahan</p>
                 <p class="p-0 m-0 mt-1">Bidang Tata Lingkungan</p>
             </div>
             <br><br>
             
-            <div id="login-header" class="align-center m-auto uppercase clr-darkgrey">
+            <div id="login-header" class="align-center m-auto uppercase clr-white">
                 <h1>Absensi Buruh</h1>
-                <h3>Taman dan Berem</h3>
+                <h2>Taman dan Berem</h2>
             </div>
             <div class="hr grey"></div>
 
@@ -71,7 +71,7 @@
             
             <!-- Dashboard Header -->
             <div id="dash-header" class="flex-beetwen">
-                <div class="dash-username clr-darkgrey">
+                <div class="dash-username clr-white">
                     <h4 class="p-0 m-0 pb-1 pt-2">Selamat Pagi</h4>
                     <h2 class="p-0 m-0">Bendhard16</h2>
                     <span class="p-0 m-0 fz-12">bendhard16@gmail.com</span>
@@ -83,7 +83,7 @@
             
             <div class="hr white"></div>
 
-            <!-- Dashboard Notif -->
+            <!-- Dashboard Notif --> 
             <div class="clr-white"><i class="fas fa-bell fz-20"></i>&nbsp; <b>Pemberitahuan</b></div>
             <div id="notif-list" class="mt-1">
                 <div class="notif-group mb-1 p-10">
@@ -98,7 +98,7 @@
 
             <div class="hr white"></div>
             <!-- Daftar Buruh -->
-            <h4 class="align-center uppercase clr-darkgrey fz-20">Kalender Absen</h4>
+            <h4 class="align-center uppercase clr-white fz-20">Kalender Absen</h4>
             <div id="buruh-date-header" class="flex-beetwen mb-1 p-5 gap-15 align-center">
                 <i class="fas fa-chevron-left"></i>
                 <span class="dis-block clr-darkgrey bolder w-100">Februari 2026</span>
@@ -245,6 +245,7 @@
     <script>
 
         function test () {
+            // return
             setTimeout(() => {
                 STATIC.changeContent('dashboard')
             },1000); 
