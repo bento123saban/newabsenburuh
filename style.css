@@ -132,21 +132,32 @@ body:has(#app.loading) #the-loader {
     background: rgba(255,255,255, .4);
     border-radius: 10px;
 }
+#sudah-absen {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 10px;
+}
 .buruh-img {
-    width: 60px;
+    width: 100%;
     aspect-ratio: 1;
-    background-color: rgba(0,0,0, .2);
+    background-color: rgba(0,0,0, .5);
+    border-radius: 7px 7px 5px 5px;
 }
 .buruh-group {
-    background: linear-gradient(45deg, white, rgba(255,255,255, .5));
-    padding: 10px;
+    background: linear-gradient(45deg, white, rgba(255,255,255, .7));
+    padding: 4px;
     border-radius: 10px;
     box-shadow: 0 0 10px rgba(0,0,0, .1);
-    display: flex;
-    justify-content: flex-start;
-    align-items: center;
-    gap: 10px;
     margin-top: 10px;
+    width: 170px;
+}
+.buruh-group i.fa-arrow-right {
+    background-color: grey;
+    width: 30px;
+    aspect-ratio: 1;
+    border-radius: 5px;
 }
 .buruh-short h4 {
     padding: 0;
