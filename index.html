@@ -67,7 +67,7 @@
         </div>
 
         <!-- Dashboard -->
-        <div id="dashboard" class="content">
+        <div id="dashboard" class="content pb-3">
             
             <!-- Dashboard Header -->
             <div id="dash-header" class="flex-beetwen">
@@ -84,37 +84,40 @@
             <div class="hr white"></div>
 
             <!-- Dashboard Notif --> 
-            <div class="clr-white"><i class="fas fa-bell fz-20"></i>&nbsp; <b>Pemberitahuan</b></div>
+            <div class="clr-white"><i class="fas fa-bell fz-20 mb-1"></i>&nbsp; <b>Pemberitahuan</b></div>
             <div id="notif-list" class="mt-1">
-                <div class="notif-group mb-1 p-10">
-                    <span class="clr-red notif-head p-0 m-0 bold pb-1 dis-block">4 Buruh Belum di absen hari ini</span>
-                    <p class="m-0 p-0 fz-14">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                <div class="notif-group mb-2 hidden">
+                    <span class="clr-red notif-head bold pb-1 dis-block">4 Buruh Belum di absen hari ini</span>
+                    <p class="m-0 p-10 fz-14 clr-white">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
                 </div>
-                <div class="notif-group mb-1 p-10">
-                    <span class="clr-red notif-head p-0 m-0 bold pb-1 dis-block">4 Buruh Belum di absen hari ini</span>
-                    <p class="m-0 p-0 fz-14">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                <div class="notif-group mb-2 hidden">
+                    <span class="clr-red notif-head bold pb-1 dis-block">4 Buruh Belum di absen hari ini</span>
+                    <p class="m-0 p-10 fz-14 clr-white">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
                 </div>
             </div>
 
             <div class="hr white"></div>
-            <!-- Daftar Buruh -->
+
+            <!-- Kalendar Absen -->
             <h4 class="align-center uppercase clr-white fz-20">Kalender Absen</h4>
-            <div id="buruh-date-header" class="flex-beetwen mb-1 p-5 gap-15 align-center">
+            <div id="buruh-date-header" class="flex-beetwen mb-2 p-5 gap-15 align-center">
                 <i class="fas fa-chevron-left"></i>
-                <span class="dis-block clr-darkgrey bolder w-100">Februari 2026</span>
+                <span class="dis-block clr-white bolder w-100">Februari 2026</span>
                 <i class="fas fa-chevron-right"></i>
             </div>
-            <div id="buruh-calendar">
+
+            <!-- Buruh Kalendar -->
+            <div id="buruh-calendar"> 
                 <div id="calendar-days" class="mb-1">
-                    <span class="clr-red">Min</span>
-                    <span class="clr-darkgrey">Sen</span>
-                    <span class="clr-darkgrey">Sel</span>
-                    <span class="clr-darkgrey">Rab</span>
-                    <span class="clr-darkgrey">Kam</span>
-                    <span class="clr-darkgrey">Jum</span>
-                    <span class="clr-darkgrey">Sab</span>
-                </div>
-                <div id="calendar-date" class="clr-darkgrey">
+                    <span class="clr-red br-red bolder">Min</span>
+                    <span class="clr-white">Sen</span>
+                    <span class="clr-white">Sel</span>
+                    <span class="clr-white">Rab</span>
+                    <span class="clr-white">Kam</span>
+                    <span class="clr-white">Jum</span>
+                    <span class="clr-white">Sab</span>
+                </div><br>
+                <div id="calendar-date" class="clr-white">
                     <div class="date-box opacity-0"></div>
                     <div class="date-box opacity-0"></div>
                     <div class="date-box opacity-0"></div>
@@ -154,9 +157,12 @@
 
             <br><br>
 
-            <div id="data-list" class="clr-darkgrey p-10 borad-10">
+            <!-- Data List -->
+            <div id="data-list" class="clr-white p-10 borad-10">
                 <div id="data-date" class="align-center bolder dis-block w-100 fz-20 mb-1 p-10 borad-10">Sabtu, 07 Februari 2026</div>
-                <div class="hr grey mt-2 mb-2"></div>
+                <div class="hr white mt-2 mb-2"></div>
+
+                <!-- Belum Absen -->
                 <div id="belum-absen">
                     <span>Belum Absen</span>
                     <div id="belum-absen-list">
@@ -231,12 +237,21 @@
 
             </div>
 
+            <br><br>
 
         </div>
 
         <div id="detail" class="content"></div>
 
         <div id="form" class="content"></div>
+
+        <nav>
+            <div id="nav-box" class="flex-evenly dis-block white p-15 borad-10 clr-white fz-20">
+                <i class="fas fa-home"></i>
+                <i class="fas fa-plus"></i>
+                <i class="fas fa-bars"></i>
+            </div>
+        </nav>
 
         
     </div>

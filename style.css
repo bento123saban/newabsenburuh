@@ -43,7 +43,7 @@ body:has(#app.loading) #the-loader {
     width: 100vw;
     height: 100vh;
     overflow: hidden !important;
-    background: url("./img/Android\ Compact\ 3.webp");
+    background: url("./img/Path.png");
     /* background-color: #0a0e00; */
     background-position: center;
     background-attachment: fixed;
@@ -56,8 +56,8 @@ body:has(#app.loading) #the-loader {
     width: 0px !important;
     border-radius: 100000px;
 }
-#app.loading * {
-    display: none !important;
+#app.loading * div{
+    display: none;
 }
 
 /* Tree */
@@ -85,6 +85,17 @@ body:has(#app.loading) #the-loader {
     width: 100%;
 }
 
+/* Navbar */
+nav {
+    position: sticky;
+    bottom: 0;
+    left: 0;
+    padding: 5px;
+}
+#nav-box {
+    background: linear-gradient(45deg, #154f20, #189466);
+    box-shadow: 0 0 10px rgba(0,0,0, .2);
+}
 
 /* Login */
 #login {display: none;}
@@ -124,20 +135,25 @@ body:has(#app.loading) #the-loader {
 .dash-userphoto i {
     aspect-ratio: 1;
     width: 80px;
-    border: 1.5px solid lightgray;
+    border: 1.3px solid lightgray;
     border-radius: 1000000px;
     background: rgba(255,255,255, .4);
 }
 .notif-group {
-    border: 1.5px solid lightgray;
-    background: linear-gradient(45deg, white, #ffffff60);
+    border: 1.3px solid lightgray;
+    background-color: rgba(255,255,255, .25);
     border-radius: 10px;
 }
+.notif-group span {
+    background: linear-gradient(45deg, white, transparent);
+    padding: 10px;
+    border-radius: 7px 7px 0 0 ;
+}
 #buruh-date-header span{
-    border: 1.5px solid lightgray;
+    border: 1.3px solid lightgray;
     padding: 6px 0;
     border-radius: 10px;
-    background-color: rgba(255,255,255, .4);
+    background-color: rgba(255,255,255, .25);
 }
 #buruh-date-header i {
     height: 100%;
@@ -149,7 +165,7 @@ body:has(#app.loading) #the-loader {
     display: grid;
     place-items: center;
     border-radius: 10px;
-    border: 1.5px solid lightgray;
+    border: 1.3px solid lightgray;
 }
 #calendar-days {
     display: grid;
@@ -157,7 +173,7 @@ body:has(#app.loading) #the-loader {
     gap: 5px;
 }
 #calendar-days span {
-    background: linear-gradient(45deg, white, transparent);
+    background-color: rgba(255,255,255, .25);
     border: 1.3px solid lightgray;
     text-align: center;
     padding: 7px 0;
@@ -175,19 +191,19 @@ body:has(#app.loading) #the-loader {
     place-items: center;
     border-radius: 10px;
     font-weight: bolder;
-    border: 1.5px solid lightgray;
-    background: linear-gradient(45deg, #ffffff80, #ffffff99);
+    border: 1.3px solid lightgray;
+    background-color: rgba(255,255,255, .25);
 }
-#data-list {background: linear-gradient(45deg, rgba(255,255,255, .3), rgba(255,255,255, .6));}
+#data-list {background-color: rgba(255,255,255, .25);}
 #data-list span {
     width: 100%;
     padding: 10px;
     display: block;
-    border-bottom: 2px dotted rgba(0,0,0, .2);
+    border-bottom: 1.3px dashed rgba(255,255,255, .25);
     margin-bottom: 10px;
     font-weight: bold;
 }
-#data-date {border: 1.3px solid #00000090;}
+#data-date {border: 1.3px solid lightgray;}
 #sudah-absen-list {
     display: flex;
     justify-content: space-evenly;
@@ -195,7 +211,7 @@ body:has(#app.loading) #the-loader {
     gap: 10px;
 }
 .buruh-group {
-    background: linear-gradient(45deg, white, rgba(255,255,255, .7));
+    background-color: rgba(255,255,255, .25);
     padding: 4px;
     border-radius: 10px;
     border: 1.5px solid lightgray;
