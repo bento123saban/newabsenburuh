@@ -412,7 +412,12 @@ input::-webkit-inner-spin-button {
 .color-delivery, .color-pickup, .clr-red, [data-color="red"] {color: red !important;}
 .br-delivery, .br-pickup, .br-red {border-color: red !important;}
 .clr-darkred {color: darkred !important;}
+.br-darkred {border-color: darkred !important;}
 
+
+.clr-brown {
+    color: brown !important;
+}
 
 .delivery, .pickup, .red, [data-bg="red"] {
     background: linear-gradient(45deg, red, darkred) !important;
@@ -445,9 +450,12 @@ input::-webkit-inner-spin-button {
 }
 .color-fuin, .clr-grey, [data-color="grey"] {color: grey !important;}
 .br-fuin, .br-grey, .br-gray {border-color: grey !important;}
-
 .clr-darkgrey {
-    color: dimgray;
+    color: #555;
+}
+
+.clr-default {
+    color: #155324;
 }
 
 .fuout, .orange, [data-bg="orange"] {
@@ -466,9 +474,9 @@ input::-webkit-inner-spin-button {
 .color-white, .clr-white, [data-color="white"] {color: white !important;}
 .br-white {border-color: white !important;}
 
-.color-default, .darkcyan, .clr-default, [data-color="default"] {color: darkcyan !important;}
+/* .color-default, .darkcyan, .clr-default, [data-color="default"] {color: darkcyan !important;} */
 .default, [data-bg="default"] {
-    background: linear-gradient(45deg, darkcyan, #00BCBC) !important;
+    background: linear-gradient(45deg, #31b852, #155324) !important;
     color: white;
 }
 .br-default {border-color: #00BCBC !important;}

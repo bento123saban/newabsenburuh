@@ -43,7 +43,7 @@ body:has(#app.loading) #the-loader {
     width: 100vw;
     height: 100vh;
     overflow: hidden !important;
-    background: url("./img/Path.png");
+    background: url("./img/hp-bg.png");
     /* background-color: #0a0e00; */
     background-position: center;
     background-attachment: fixed;
@@ -132,6 +132,13 @@ nav {
     transform: translate(-10%, calc(-100% + 20px));
     width: 100% !important;
 }
+#dash-headerx {
+    display: flex;
+    flex-direction: column-reverse;
+    gap: 10px;
+    justify-content: center;
+    direction: rtl;
+}
 .dash-userphoto i {
     aspect-ratio: 1;
     width: 80px;
@@ -140,24 +147,26 @@ nav {
     background: rgba(255,255,255, .4);
 }
 .notif-group {
-    border: 1.3px solid lightgray;
+    border: 2px solid white;
     background-color: rgba(255,255,255, .25);
     border-radius: 10px;
 }
 .notif-group span {
-    background: linear-gradient(45deg, white, transparent);
+    background-color: rgba(255,255,255, .7);
     padding: 10px;
     border-radius: 7px 7px 0 0 ;
+    text-transform: uppercase;
 }
 #buruh-date-header span{
     border: 1.3px solid lightgray;
     padding: 6px 0;
     border-radius: 10px;
-    background-color: rgba(255,255,255, .25);
+    background: #155324 !important;
+    color: white !important;
 }
 #buruh-date-header i {
     height: 100%;
-    background: linear-gradient(45deg, green, limegreen);
+    background: #155324 !important;
     color: white;
     display: block;
     width: 45px;
@@ -203,7 +212,10 @@ nav {
     margin-bottom: 10px;
     font-weight: bold;
 }
-#data-date {border: 1.3px solid lightgray;}
+#data-date {
+    color: white;
+    background-color: #155324;
+}
 #sudah-absen-list {
     display: flex;
     justify-content: space-evenly;
@@ -211,16 +223,16 @@ nav {
     gap: 10px;
 }
 .buruh-group {
-    background-color: rgba(255,255,255, .25);
+    background-color: rgba(255,255,255, .7);
     padding: 4px;
     border-radius: 10px;
-    border: 1.5px solid lightgray;
+    border: 2px solid lightgray;
     margin-bottom: 10px;
     width: 100%;
     height: fit-content;
 }
 .buruh-group i.fa-clipboard-user {
-    background-color: grey;
+    background-color: ;
     width: 30px;
     aspect-ratio: 1;
     border-radius: 5px;
@@ -229,13 +241,30 @@ nav {
 .buruh-img {
     width: 100%;
     position: relative;
-    background-color: rgba(0,0,0, .5);
+    background-color: rgba(0,0,0, .15);
     border-radius: 7px 7px 5px 5px;
 }
 .buruh-img img {
     object-fit: cover;
     width: 100%;
     height: 100%;
+}
+.buruh-img i {
+    width: 100%;
+    aspect-ratio: 16/9;
+    background-color: rgba(255,255,255, .25) !important;
+    font-size: 35px;
+    position: relative;
+}
+.buruh-img i::after {
+    content: attr(data-text) "";
+    font-size: 12px;
+    position: absolute;
+    bottom: 3px;
+    left: 0;
+    width: 100%;
+    text-align: center;
+
 }
 .buruh-short h4 {
     padding: 0;
