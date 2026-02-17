@@ -22,6 +22,8 @@
     </div>
 
     <div id="app" class="loading clr-default">
+
+        <div id="toast"></div>
         
         <div id="tree" class="dis-none">
             <img src="./img/tree-bg.png" alt="">
@@ -297,44 +299,7 @@
         
     </div>
 
-    <script src="app2.js"></script>
-    <script>
-
-        function test () { 
-            // return
-            setTimeout(() => {
-                STATIC.changeContent('form')
-            },1000); 
-
-            
-            setTimeout(() => {
-                //STATIC.changeContent('loading')
-            },3000); 
-            
-            setTimeout(() => {
-                // STATIC.changeContent('calendar')
-            },4000); 
-
-            return
-            setTimeout(() => {
-                STATIC.changeContent('loading')
-            },2000); 
-            // return
-            setTimeout(() => {
-                STATIC.changeContent('dashboard')
-            }, 3000);
-
-            return
-            setTimeout(() => {
-                STATIC.changeContent('loading')
-            }, 7500);  
-            setTimeout(() => {
-                STATIC.changeContent('dashboard')
-            }, 10000);      
-        }
-
-        test()
-    </script>
+    <script  type="module" src="main.js"></script>
 
 
 </body>
