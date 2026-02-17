@@ -114,7 +114,9 @@
 
         <div id="detail" class="content dis-none"></div>
 
-        <div id="form" class="content dis-none"></div>
+        <div id="form" class="content">
+            <h2 class="clr-default align-center uppercase m-0">Form Absen</h2>
+        </div>
 
         <!-- Buruh Kalendar -->
         <div id="buruh-calendar" class="content"> 
@@ -301,16 +303,16 @@
         function test () { 
             // return
             setTimeout(() => {
-                STATIC.changeContent('dashboard')
+                STATIC.changeContent('form')
             },1000); 
 
             
             setTimeout(() => {
-                STATIC.changeContent('loading')
+                //STATIC.changeContent('loading')
             },3000); 
             
             setTimeout(() => {
-                STATIC.changeContent('calendar')
+                // STATIC.changeContent('calendar')
             },4000); 
 
             return

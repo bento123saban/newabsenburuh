@@ -295,3 +295,15 @@ nav {
     width: 20px;
     aspect-ratio: 1;
 }
+
+
+
+
+
+
+
+
+
+
+#form {display: none;}
+#app.form #form {display:  block;}
