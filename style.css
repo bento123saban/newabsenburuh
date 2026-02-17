@@ -157,6 +157,23 @@ nav {
     border-radius: 7px 7px 0 0 ;
     text-transform: uppercase;
 }
+
+
+
+
+
+
+
+
+
+
+
+
+#buruh-calendar {display: none;}
+#app.calendar #buruh-calendar {display:  block;}
+
+
+
 #buruh-date-header span{
     border: 1.3px solid lightgray;
     padding: 6px 0;
@@ -232,7 +249,6 @@ nav {
     height: fit-content;
 }
 .buruh-group i.fa-clipboard-user {
-    background-color: ;
     width: 30px;
     aspect-ratio: 1;
     border-radius: 5px;

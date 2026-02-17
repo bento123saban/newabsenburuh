@@ -108,64 +108,72 @@
 
             <div class="hr white"></div>
 
+            <br><br>
+
+        </div>
+
+        <div id="detail" class="content dis-none"></div>
+
+        <div id="form" class="content dis-none"></div>
+
+        <!-- Buruh Kalendar -->
+        <div id="buruh-calendar" class="content"> 
+
             <!-- Kalendar Absen -->
-            <h4 class="align-center uppercase fz-20">Kalender Absen</h4>
+            <h4 class="align-center uppercase fz-20 clr-default">Kalender Absen</h4>
             <div id="buruh-date-header" class="flex-beetwen mb-2 p-5 gap-15 align-center">
                 <i class="fas fa-chevron-left"></i>
                 <span class="dis-block bolder w-100">Februari 2026</span>
                 <i class="fas fa-chevron-right"></i>
             </div>
 
-            <!-- Buruh Kalendar -->
-            <div id="buruh-calendar"> 
-                <div id="calendar-days" class="mb-1">
-                    <span class="clr-red br-red bolder">Min</span>
-                    <span class="">Sen</span>
-                    <span class="">Sel</span>
-                    <span class="">Rab</span>
-                    <span class="">Kam</span>
-                    <span class="">Jum</span>
-                    <span class="">Sab</span>
-                </div><br>
-                <div id="calendar-date" class="clr-default">
-                    <div class="date-box opacity-0"></div>
-                    <div class="date-box opacity-0"></div>
-                    <div class="date-box opacity-0"></div>
-                    <div class="date-box red">1</div>
-                    <div class="date-box">2</div>
-                    <div class="date-box">3</div>
-                    <div class="date-box">4</div>
-                    <div class="date-box">5</div>
-                    <div class="date-box red">6</div>
-                    <div class="date-box">7</div>
-                    <div class="date-box">8</div>
-                    <div class="date-box red">9</div>
-                    <div class="date-box red">10</div>
-                    <div class="date-box">11</div>
-                    <div class="date-box">12</div>
-                    <div class="date-box">13</div>
-                    <div class="date-box">14</div>
-                    <div class="date-box">15</div>
-                    <div class="date-box">16</div>
-                    <div class="date-box">17</div>
-                    <div class="date-box red">18</div>
-                    <div class="date-box">19</div>
-                    <div class="date-box">20</div>
-                    <div class="date-box">21</div>
-                    <div class="date-box">22</div>
-                    <div class="date-box red">23</div>
-                    <div class="date-box">24</div>
-                    <div class="date-box">25</div>
-                    <div class="date-box">26</div>
-                    <div class="date-box">27</div>
-                    <div class="date-box">28</div>
-                    <div class="date-box">29</div>
-                    <div class="date-box">30</div>
-                    <div class="date-box">31</div>
-                </div>
+            <div id="calendar-days" class="mb-1">
+                <span class="clr-red br-red bolder">Min</span>
+                <span class="">Sen</span>
+                <span class="">Sel</span>
+                <span class="">Rab</span>
+                <span class="">Kam</span>
+                <span class="">Jum</span>
+                <span class="">Sab</span>
+            </div><br>
+            <div id="calendar-date" class="clr-default">
+                <div class="date-box opacity-0"></div>
+                <div class="date-box opacity-0"></div>
+                <div class="date-box opacity-0"></div>
+                <div class="date-box red">1</div>
+                <div class="date-box">2</div>
+                <div class="date-box">3</div>
+                <div class="date-box">4</div>
+                <div class="date-box">5</div>
+                <div class="date-box red">6</div>
+                <div class="date-box">7</div>
+                <div class="date-box">8</div>
+                <div class="date-box red">9</div>
+                <div class="date-box red">10</div>
+                <div class="date-box">11</div>
+                <div class="date-box">12</div>
+                <div class="date-box">13</div>
+                <div class="date-box">14</div>
+                <div class="date-box">15</div>
+                <div class="date-box">16</div>
+                <div class="date-box">17</div>
+                <div class="date-box red">18</div>
+                <div class="date-box">19</div>
+                <div class="date-box">20</div>
+                <div class="date-box">21</div>
+                <div class="date-box">22</div>
+                <div class="date-box red">23</div>
+                <div class="date-box">24</div>
+                <div class="date-box">25</div>
+                <div class="date-box">26</div>
+                <div class="date-box">27</div>
+                <div class="date-box">28</div>
+                <div class="date-box">29</div>
+                <div class="date-box">30</div>
+                <div class="date-box">31</div>
             </div>
 
-            <br><br>
+            <div class="hr white"></div>
 
             <!-- Data List -->
             <div id="data-list" class="clr-default p-10 borad-10">
@@ -274,14 +282,7 @@
                 </div>
 
             </div>
-
-            <br><br>
-
         </div>
-
-        <div id="detail" class="content"></div>
-
-        <div id="form" class="content"></div>
 
         <nav class="dis-none">
             <div id="nav-box" class="flex-evenly dis-block white p-15 borad-10 clr-white fz-20">
@@ -302,6 +303,16 @@
             setTimeout(() => {
                 STATIC.changeContent('dashboard')
             },1000); 
+
+            
+            setTimeout(() => {
+                STATIC.changeContent('loading')
+            },3000); 
+            
+            setTimeout(() => {
+                STATIC.changeContent('calendar')
+            },4000); 
+
             return
             setTimeout(() => {
                 STATIC.changeContent('loading')
